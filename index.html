@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>leetMetrics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMetrics App</title>
+    <link rel="stylesheet" href="./styles.css">
+
 </head>
+
 <body>
-<h1>leetMetrics is working!</h1>
-<p>This is the home page.</p>
+    <div class="prime-container">
+        <div class="main-container">
+
+            <h1 class="header">LeetMetrics</h1>
+            <!-- search panel to enter input and button -->
+            <div class="search-div">
+                <div class="searchbar">
+                    <input type="text" id="inputbtn" class="search-panel padding-search" placeholder="search user">
+                </div>
+                <div class="search">
+                    <button type="submit" id="btn" class="btn padding-search">Search</button>
+                </div>
+
+            </div>
+
+
+            <!-- chart to show data -->
+            <div class="chart-container">
+                <div class="data-container data-container-easy">
+                    <p class="outofData"></p>
+                    <p>Easy</p>
+                </div>
+                <div class="data-container data-container-medium">
+                    <p class="outofData"></p>
+                    <p>Medium</p>
+                </div>
+                <div class="data-container data-container-hard">
+                    <p class="outofData"></p>
+                    <p>Hard</p>
+                </div>
+            </div>
+
+            <!-- some data to show users -->
+            <div class="users-container">
+                <div class="row1-card card-flex-container">
+                    <div class="card-1 card-container">
+                        <p class = "data-1"></p>
+                        <p>Overall Submission</p>
+                    </div>
+                    <div class="card-2 card-container">
+                        <p class = "data-1"></p>
+                        <p>OverallEasy Submission</p>
+                    </div>
+                </div>
+
+                <div class = "row2-card card-flex-container">
+                    <div class="card-3 card-container">
+                        <p class ="data-1"></p>
+                        <p>OverallMedium Submission</p>
+                    </div>
+                    <div class="card-4 card-container">
+                        <p class = "data-1"></p>
+                        <p>OverallHard Submission</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
